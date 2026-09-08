@@ -1,0 +1,253 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+h2 {
+    color: #0d6efd;
+}
+
+
+.imagem-principal {
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+.imagem-principal img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+
+.texto-servicos {
+    color: #6c757d;
+    margin-bottom: 30px;
+}
+
+
+.card-servico {
+    border: 2px solid transparent;
+    transition: 0.3s ease;
+}
+
+
+.card-servico:hover {
+    transform: translateY(-8px);
+    border-color: #0d6efd;
+    box-shadow: 0 10px 22px rgba(13, 110, 253, 0.18);
+}
+
+
+.card-servico img {
+    height: 300px;
+    object-fit: cover;
+}
+
+
+.card-servico .card-title {
+    color: #0d6efd;
+    margin-bottom: 15px;
+}
+
+
+.preco-servico {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #198754;
+}
+
+
+.botao-servico {
+    width: 100%;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+
+
+.botao-servico.selecionado {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+
+
+.botao-servico.selecionado:hover {
+    background-color: #0b5ed7;
+    border-color: #0b5ed7;
+}
+
+
+.servicos-selecionados {
+    display: none;
+
+    background-color: #ffffff;
+
+    border-left: 5px solid #0d6efd;
+
+    padding: 20px;
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+
+    border-radius: 10px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+
+.servicos-selecionados.mostrar {
+    display: block;
+}
+
+
+
+section {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+
+form {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.10);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control,
+.form-select {
+    border-radius: 8px;
+}
+
+
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+}
+
+
+
+.form-check-input:checked {
+    background-color: #0d6efd;
+    border-color: #0d6efd;
+}
+
+
+
+
+.btn-success {
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+
+#dataHora {
+    font-weight: bold;
+    color: #6c757d;
+}
+
+
+#mensagemAgendamento {
+    font-weight: bold;
+}
+
+
+footer {
+    margin-top: 40px;
+}
+
+
+a:focus,
+button:focus,
+input:focus,
+select:focus {
+    outline: 3px solid #ffc107;
+    outline-offset: 2px;
+}
+
+
+@media (max-width: 768px) {
+
+    .imagem-principal img {
+        height: 280px;
+    }
+
+    .card-img-top {
+        height: 220px;
+    }
+
+    .card-servico img {
+        height: 240px;
+    }
+
+    form {
+        padding: 18px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .preco-servico {
+        font-size: 1.3rem;
+    }
+}
